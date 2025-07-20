@@ -1,0 +1,48 @@
+# Build files
+/build/
+/bin/
+/obj/
+/out/
+
+*.o
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+
+# Compiler-generated files
+*.d
+*.dep
+*.log
+
+# VS Code settings
+.vscode/
+
+# CMake files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# STM32CubeMX specific
+.ioc
+*.launch
+*.settings/
+*.mxproject
+
+# Temporary files
+*~
+*.swp
+*.swo
+*.bak
+
+# Debugger files
+*.uvoptx
+*.uvprojx
+*.cspy.bat
+*.cspy.*
+
+# Misc
+.DS_Store
+Thumbs.db
