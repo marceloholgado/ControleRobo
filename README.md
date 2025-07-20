@@ -65,11 +65,9 @@ ACK values expected by the microcontroller:
 ## 📁 Project Structure
 
 ```
-├── Core/
-│   ├── Inc/                # Header files (main.h, etc.)
-│   └── Src/                # Source files (main.c, etc.)
+|── Inc/                    # Header files (main.h, etc.)
+│── Src/                    # Source files (main.c, etc.)
 ├── Drivers/                # STM32 HAL and CMSIS drivers
-├── .ioc                    # STM32CubeMX project file
 ├── README.md               # This file
 └── .gitignore              # Recommended Git exclusions
 ```
@@ -82,8 +80,8 @@ To build and flash:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/stm32f0-adc-uart.git
-   cd stm32f0-adc-uart
+   git clone https://github.com/marceloholgado/ControleRobo.git
+   cd ControleRobo
    ```
 
 2. Open the project with **STM32CubeIDE** or build using Make/CMake with the appropriate toolchain.
@@ -98,5 +96,4 @@ This project uses the **STMicroelectronics BSD-style license**, as inherited fro
 
 ## ✍️ Author
 
-Developed by [Your Name].  
-Feel free to open issues or contribute via pull requests.
+Developed by Marcelo Holgado.  
