@@ -294,11 +294,34 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-		printf("Ola\r\n");
+		botao = aguarda_botao();
   /* USER CODE END WHILE */
-
+    switch (estado) {
+      case 0:
+        base(adc_s_config);
+        break;
+      case 1:
+        garra(adc_s_config);
+        break;
+      case 2:
+        distancia(adc_s_config);
+        break;
+      case 3:
+        altura(adc_s_config);
+        break;
+      case 4:
+        roda_esquerda(adc_s_config);
+        break;
+      case 5:
+        roda_direita(adc_s_config);
+        break;
+      default:
+        estado = 0;
+        break;
+    }
   /* USER CODE BEGIN 3 */
-
+    estado = (estado + 1) % 6;
+    HAL_Delay(500);
   }
   /* USER CODE END 3 */
 
